@@ -25,4 +25,15 @@ class Character {
       image: json['image'] ?? '',
     );
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'house': house,
+      'species': species,
+      'actor': actor,
+      'image': image,
+    };
+  }
 }

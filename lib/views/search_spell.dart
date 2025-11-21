@@ -91,7 +91,20 @@ class _SearchSpellPageState extends State<SearchSpellPage> {
                   return const Center(child: CircularProgressIndicator());
                 }
                 if (snapshot.hasError) {
-                  return Center(child: Text("Error: ${snapshot.error}"));
+                  return const Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.wifi_off, size: 60, color: Colors.grey),
+                        SizedBox(height: 16),
+                        Text(
+                          "No internet connection.\nCannot load spells.",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 18, color: Colors.grey),
+                        ),
+                      ],
+                    ),
+                  );
                 }
                 if (!snapshot.hasData || _filteredSpells.isEmpty) {
                   if (_allSpells.isNotEmpty && _filteredSpells.isEmpty) {
