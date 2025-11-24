@@ -3,13 +3,15 @@ import '../models/character_model.dart';
 
 class CharacterDetailPage extends StatelessWidget {
   final Character character;
+  final bool isOfflinemode;
 
-  const CharacterDetailPage({super.key, required this.character});
+  const CharacterDetailPage({super.key, required this.character, required this.isOfflinemode});
 
   @override
   Widget build(BuildContext context) {
     const mediumPurple = Color(0xFF5A26B1);
     const lightgold = Color(0xFFC38524);
+    final bool shouldShowImage = character.image.isNotEmpty && !isOfflinemode;
 
     return Scaffold(
       appBar: AppBar(
@@ -40,10 +42,10 @@ class CharacterDetailPage extends StatelessWidget {
                   child: CircleAvatar(
                     radius: 100,
                     backgroundColor: Colors.grey.shade200,
-                    backgroundImage: character.image.isNotEmpty
+                    backgroundImage: shouldShowImage
                         ? NetworkImage(character.image)
                         : null,
-                    child: character.image.isEmpty
+                    child: !shouldShowImage
                         ? Icon(
                       Icons.person_outline,
                       size: 100,

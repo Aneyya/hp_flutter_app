@@ -157,7 +157,7 @@ class _SearchCharacterPageState extends State<SearchCharacterPage> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                builder: (_) => CharacterDetailPage(character: character),
+                                builder: (_) => CharacterDetailPage(character: character, isOfflinemode: _isOfflineMode),
                                 ),
                               );
                             },
