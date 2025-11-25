@@ -30,16 +30,9 @@ While character data (names, details) works offline, images are loaded via remot
 
 ## Getting Started
 
-### To run this project locally, follow these steps:
+### To run this project locally, follow these steps In the compiler console:
 
-This project is a starting point for a Flutter application.
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-### Install dependencies:
-In the compiler console  
+### Install dependencies: 
 ```
 flutter pub get
 ```
@@ -48,6 +41,10 @@ flutter pub get
 flutter run
 ```
 
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+
 ## Supported Platforms
 
 - Android
@@ -55,7 +52,7 @@ flutter run
 
 ## Demonstartion
 
-### You can find a video presentation in the demo/ directory of this project.
+### You can find a video presentation and Figma project in the demo/ directory.
 
 ### Screenshots:
 
