@@ -58,19 +58,19 @@ samples, guidance on mobile development, and a full API reference.
 
 - #### Home Page
 
-![Home Page](demo\home_page.png)
+![Home Page](demo/home_page.png)
 
 - #### Character Search Page
 
-![Character Search Page](demo\character_search_page.png)
+![Character Search Page](demo/character_search_page.png)
 
 - #### Character Detail Page
 
-![Character Detail Page](demo\character_detail_page.png)
+![Character Detail Page](demo/character_detail_page.png)
 
 - #### Magic Spell Search Page
 
-![Magic Spell Search Page](demo\magic_spell_search_page.png)
+![Magic Spell Search Page](demo/magic_spell_search_page.png)
 
 ## Disclaimer
 
